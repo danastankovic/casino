@@ -1,0 +1,557 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  color: #333333;
+}
+button:focus {
+  outline: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+.l-button {
+  color: #fff;
+  background-color: #f08946;
+  border: none;
+}
+
+/* TOP BANNER START */
+.top-banner {
+  width: 100%;
+  background-color: #2a2a2a;
+}
+.left-part {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.right-part {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.l-button.trending {
+  padding: 7px 8px;
+  color: #f9f9f9;
+  font-size: 14px;
+  font-weight: 700;
+}
+.left-part .arrow-box {
+  height: 15px;
+  margin: 0 14px;
+}
+.left-part .arrow-box img {
+  width: 9px;
+  height: 15px;
+  cursor: pointer;
+}
+.left-part p {
+  color: #f7f7f7;
+  font-size: 14px;
+  font-weight: 400;
+}
+.language-button {
+  height: 20px;
+  background-image: url("../images/svg/uk.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  color: #f7f7f7;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  padding-left: 27px;
+  margin-right: 54px;
+}
+ul.social-networks {
+  list-style-type: none;
+}
+ul.social-networks li {
+  display: inline-block;
+}
+/* TOP BANNER END */
+
+/* HEADER TOP START */
+.header-top {
+  padding: 15.5px 0;
+}
+/* HEADER TOP END */
+
+/* HEADER START */
+.header {
+  width: 100%;
+  background-color: #2a2a2a;
+}
+.header .nav {
+  width: 100%;
+  position: relative;
+}
+.header .nav .nav-btn {
+  display: none;
+}
+.header .nav .nav-links {
+  list-style-type: none;
+}
+.header .nav .nav-links li {
+  display: inline-block;
+  padding: 14px 10px;
+  position: relative;
+  border-bottom: 3px solid transparent;
+}
+.header .nav .nav-links li a {
+  display: inline-block;
+  color: #f7f7f7;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header .nav .nav-links li:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background: #f08946;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header .nav .nav-links li:hover:after {
+  width: 100%;
+}
+.header .nav .nav-links li:hover a {
+  color: #f08946;
+}
+.header .nav .nav-links li.active {
+  border-color: #f08946;
+}
+.header .nav .nav-links li.active:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background: #f08946;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header .nav .nav-links li.active a {
+  color: #f08946;
+}
+.header .nav #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header .nav .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .header .nav .nav-btn label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .header .nav .nav-btn label:hover,
+  .header .nav #nav-check:checked ~ .nav-btn label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .header .nav .nav-btn label span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .header .nav .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .header .nav .nav-links a {
+    display: block;
+    width: 100%;
+  }
+  .header .nav #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .header .nav #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+#search {
+  width: 59px;
+  height: 50px;
+  background-color: #f08946;
+  border: none;
+  float: right;
+  background-image: url("../images/png/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* HEADER END */
+
+/* MEDIA POST START */
+.main-content {
+  position: relative;
+}
+.left-side-image {
+  position: absolute;
+  top: 247px;
+}
+.section.post-media-section {
+  padding-top: 20px;
+}
+.post-media {
+  width: 100%;
+  height: 456px;
+  overflow: hidden;
+  position: relative;
+}
+.post-media-content {
+  padding-right: 2px;
+}
+.post-media-image {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(
+    top,
+    transparent 0%,
+    transparent 1%,
+    rgba(0, 0, 0, 0.78) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    transparent 0%,
+    transparent 1%,
+    rgba(0, 0, 0, 0.78) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 1%,
+    rgba(0, 0, 0, 0.78) 100%
+  );
+  z-index: 5;
+  top: 0;
+}
+
+.top-part-post-media,
+.bottom-part-post-media {
+  display: flex;
+  padding-left: 3px;
+}
+.bottom-part-post-media {
+  margin-top: 4px;
+}
+.post-media-small {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-height: 226px;
+}
+.post-media-small:first-child,
+.bottom-part-post-media:first-child {
+  margin-right: 5px;
+}
+.post-media-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 17px 14px;
+  z-index: 55;
+}
+.badge {
+  background-color: #5c629e;
+  color: #f7f7f7;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  padding: 2.5px 6.5px;
+}
+a.news-link {
+  display: block;
+  color: #f7f7f7;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  padding-right: 141px;
+  text-decoration: none;
+  line-height: 29.41px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+.author span,
+.time span {
+  color: #f7f7f7;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+}
+.author,
+.time {
+  display: inline-block;
+}
+.time {
+  margin-left: 10px;
+}
+.post-media-small a.news-link {
+  margin: 6px 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 25.4px;
+}
+/* MEDIA POST END */
+/* SECTION CONTENT START */
+.section.section-content {
+  margin-top: 47px;
+}
+.left-side {
+  width: 820px;
+}
+.right-side {
+  width: calc(100% - 820px);
+  padding-left: 32px;
+}
+.guides-container-header,
+.popular-casinos-header,
+.popular-games-header,
+.events-and-reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.guides-container-header .title h4,
+.popular-casinos-header .title h4,
+.popular-games-header .title h4,
+.events-and-reports-header .title h4 {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 500;
+}
+.arrow-back {
+  padding-right: 6px;
+}
+.arrow-next {
+  padding-left: 6px;
+}
+.guides-container-content,
+.events-and-report-content {
+  margin-top: 19px;
+}
+.guides-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.guides-item {
+  border: 1px solid #e5e5e5;
+  background-color: #f3f3f3;
+  padding-top: 16px;
+  max-width: 259px;
+}
+.guides-item-footer {
+  background-color: #f08946;
+}
+.guides-item-content {
+  padding: 0 14px 26px;
+  text-align: center;
+}
+.guides-item-header {
+  text-align: center;
+}
+.guides-item-header h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.guides-item-content img {
+  padding: 22.5px 0;
+}
+.guides-item-content p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.guides-item-footer button {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #f7f7f7;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 7px 0;
+}
+.guides-item.blackjack-item .guides-item-content {
+  padding: 0 6px 26px;
+}
+.dot-box {
+  width: 100%;
+  text-align: center;
+}
+.dot-box .dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  border: 2px solid #f08946;
+}
+.dot-box .dot.active {
+  background-color: #f26835;
+}
+.popular-casinos-container,
+.popular-games-container,
+.events-and-reports-container {
+  margin-top: 60px;
+}
+.tabs-box ul {
+  list-style-type: none;
+}
+.tabs-box ul li {
+  display: inline-block;
+  color: #aaaaaa;
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 17px;
+}
+.tabs-box ul li:last-child {
+  padding-right: 0;
+}
+.tabs-box ul li.active-tabs {
+  color: #5c629e;
+}
+.popular-casinos-content,
+.popular-games-content {
+  margin-top: 19px;
+  padding: 18px 17px 15px;
+  border: 1px solid #e5e5e5;
+  background-color: #f3f3f3;
+}
+.popular-casinos-items,
+.popular-games-items {
+  display: flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.popular-casino-item,
+.popular-games-item {
+  max-width: 320px;
+  margin-right: 62px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+.popular-casino-item:nth-child(4n + 0),
+.popular-games-item:nth-child(4n + 0) {
+  margin-right: 0;
+}
+.popular-casino-item.no-margin-bottom,
+.popular-games-item.no-margin-bottom {
+  margin-bottom: 0;
+}
+.popular-casino-item span,
+.popular-games-item span {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #aaaaaa;
+}
+.popular-games-item span {
+  text-align: center;
+  width: 92px;
+}
+.header-box {
+  display: flex;
+}
+.header-box .tabs-box ul li:last-child {
+  margin-right: 17px;
+}
+.events-and-report-content .post-media {
+  width: 98.5%;
+  height: 299px;
+}
+.events-and-report-content a.news-link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.4px;
+  padding-right: 0;
+  margin-bottom: 5px;
+  margin-top: 4px;
+}
+.event-item {
+  display: flex;
+}
+.event-info-link {
+  margin-top: 3px;
+}
+.event-link {
+  color: #2a2a2a;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.4px;
+  text-decoration: none;
+}
+.event-text p {
+  color: #2a2a2a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.33px;
+}
+.event-info span {
+  color: #aaaaaa;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 29.41px;
+}
+.event-item-right-side {
+  margin-left: 20px;
+}
+.event-item {
+  margin-top: 20px;
+}
+/* SECTION CONTENT END */

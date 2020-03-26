@@ -183,7 +183,6 @@ ul.social-networks li {
 -------------------------------------------------------------- */
 header {
   width: 100%;
-  margin-top: 20px;
 }
 
 header nav {
@@ -264,17 +263,20 @@ header nav {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  -webkit-transition: opacity 5s, visibility 0.35s, height 0.35s;
   transition: opacity 5s, visibility 0.35s, height 0.35s;
   overflow: hidden;
 }
 .overlay.open {
   -webkit-backface-visibility: hidden;
   opacity: 1;
+  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   visibility: visible;
   height: 100%;
   z-index: 10;
   background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: background 0.35s ease;
   transition: background 0.35s ease;
   z-index: 5555;
 }
@@ -291,6 +293,30 @@ header nav {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
+}
+.header-search-box input::-webkit-input-placeholder {
+  color: #d0d0d0;
+  font-style: italic;
+  font-size: 16px;
+  opacity: 1; /* Firefox */
+}
+.header-search-box input::-moz-placeholder {
+  color: #d0d0d0;
+  font-style: italic;
+  font-size: 16px;
+  opacity: 1; /* Firefox */
+}
+.header-search-box input:-ms-input-placeholder {
+  color: #d0d0d0;
+  font-style: italic;
+  font-size: 16px;
+  opacity: 1; /* Firefox */
+}
+.header-search-box input::-ms-input-placeholder {
+  color: #d0d0d0;
+  font-style: italic;
+  font-size: 16px;
+  opacity: 1; /* Firefox */
 }
 .header-search-box input::placeholder {
   color: #d0d0d0;
@@ -350,9 +376,6 @@ header nav {
     position: relative;
     background-color: transparent;
     -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    -ms-transition: height 0.3s;
-    -o-transition: height 0.3s;
     transition: height 0.3s;
   }
 
@@ -375,6 +398,7 @@ header nav {
   top: 5px;
 }
 .dropdown .menu {
+  -webkit-transition: max-height 0.5s ease-out;
   transition: max-height 0.5s ease-out;
   max-height: 320px;
   overflow: hidden;
@@ -382,6 +406,7 @@ header nav {
 }
 
 .rotate-180 {
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   width: 15px;
   position: absolute;
@@ -418,8 +443,11 @@ header nav {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  display: -webkit-inline-box;
   display: inline-flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -518,8 +546,11 @@ header nav {
   text-align: center;
   display: inline-block;
   padding: 0;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
 a.news-link {
@@ -1180,6 +1211,30 @@ button.sign-up {
   background-color: #f08946;
   margin-left: 2px;
 }
+.footer-searh-box input::-webkit-input-placeholder {
+  color: #434343;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 1; /* Firefox */
+}
+.footer-searh-box input::-moz-placeholder {
+  color: #434343;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 1; /* Firefox */
+}
+.footer-searh-box input:-ms-input-placeholder {
+  color: #434343;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 1; /* Firefox */
+}
+.footer-searh-box input::-ms-input-placeholder {
+  color: #434343;
+  font-size: 16px;
+  font-style: italic;
+  opacity: 1; /* Firefox */
+}
 .footer-searh-box input::placeholder {
   color: #434343;
   font-size: 16px;
@@ -1287,8 +1342,11 @@ button.sign-up {
   color: #f7f7f7;
 }
 .categories-news-header {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
 }
 .categories-news-header h4 {
@@ -1325,8 +1383,11 @@ button.sign-up {
   padding: 0;
   width: 46px;
   height: 19px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
 .pagination {
@@ -1337,8 +1398,11 @@ ul.pagination-demo {
   list-style-type: none;
 }
 ul.pagination-demo li {
+  display: -webkit-inline-box;
   display: inline-flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   width: 27px;
   height: 27px;

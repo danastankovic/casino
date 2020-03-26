@@ -10,6 +10,7 @@
     <!--stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/grid.css" />
+    <link rel="stylesheet" href="assets/css/media-queries.css" />
     <!--font0-->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
@@ -101,38 +102,221 @@
         <div class="section">
           <div class="row">
             <div class="col-10">
-              <div class="nav">
-                <input type="checkbox" id="nav-check" />
-                <!-- <div class="nav-header">
-          <div class="nav-title">
-            JoGeek
-          </div>
-        </div> -->
-                <div class="nav-btn">
-                  <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </label>
+              <header id="header-id" class="site-header">
+                <div class="container clearfix">
+                  <div class="nav-header">
+                    <div class="nav-title">
+                      <a href="index.html">
+                        <img src="./assets/images/png/logo.png" alt="logo"
+                      /></a>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul class="nav-links">
+                      <li class="active"><a href="">NEWS</a></li>
+                      <li><a href="">EVENTS/REPORTS</a></li>
+                      <li><a href="">LIFESTYLE</a></li>
+                      <li><a href="">CASINOS</a></li>
+                      <li><a href="">DEPOSIT</a></li>
+                      <li><a href="">APPS</a></li>
+                      <li><a href="">BLACKJACK</a></li>
+                      <li><a href="">ROULETTE</a></li>
+                      <li><a href="">SLOTS</a></li>
+                      <li><a href="">VP</a></li>
+                      <li><a href="">GAMES</a></li>
+                      <li><a href="">BONUSES</a></li>
+                    </ul>
+                  </nav>
                 </div>
-
-                <ul class="nav-links">
-                  <li class="active"><a href="">NEWS</a></li>
-                  <li><a href="">EVENTS/REPORTS</a></li>
-                  <li><a href="">LIFESTYLE</a></li>
-                  <li><a href="">CASINOS</a></li>
-                  <li><a href="">DEPOSIT</a></li>
-                  <li><a href="">APPS</a></li>
-                  <li><a href="">BLACKJACK</a></li>
-                  <li><a href="">ROULETTE</a></li>
-                  <li><a href="">SLOTS</a></li>
-                  <li><a href="">VP</a></li>
-                  <li><a href="">GAMES</a></li>
-                  <li><a href="">BONUSES</a></li>
-                </ul>
-                <!--ul.nav-links-->
+              </header>
+              <!-- /header -->
+              <div id="toggle-button" class="button-container toggle-animation">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
               </div>
-              <!--.nav-->
+
+              <div class="overlay" id="overlay">
+                <button id="close-overlay" class="btn-close-overlay"></button>
+                <nav class="overlay-menu">
+                  <div class="header-search-box">
+                    <input type="text" name="" id="" placeholder="Search..." />
+                    <div class="magnifying-glass"></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />NEWS</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />EVENTS/REPORTS</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />LIFESTYLE</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />CASINOS</a
+                      >
+                    </li>
+                    <li>
+                      <div class="dropdown">
+                        <div class="title pointer-cursor">
+                          <img
+                            src="./assets/images/svg/down-arrow-dropdown.svg"
+                            alt="Open dropdown"
+                            class="open-dropdown"
+                          />DEPOSIT
+                        </div>
+
+                        <div class="menu pointer-cursor hide">
+                          <img
+                            src="./assets/images/svg/down-arrow.svg"
+                            alt="Open dropdown"
+                            class="rotate-180"
+                          />
+                          <div class="option" id="option1">
+                            <a href="">Casino</a>
+                          </div>
+                          <div class="option" id="option2">
+                            <a href="">Bingo</a>
+                          </div>
+                          <div class="option" id="option3">
+                            <a href="">SPORT BETTING</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />APPS</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />BLACKJACK</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />ROULETTE</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />SLOTS</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />VP</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />GAMES</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/down-arrow-dropdown.svg"
+                          alt="Open dropdown"
+                          class="open-dropdown"
+                        />BONUSES</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="./assets/images/svg/uk.svg"
+                          class="lng-icon"
+                        />English</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="social-networks">
+                    <li>
+                      <a href="">
+                        <img
+                          src="./assets/images/png/socialn-networks-white/ICON.png"
+                          alt="Facebook"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          src="./assets/images/png/socialn-networks-white/ICONt.png"
+                          alt="twitter"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          src="./assets/images/png/socialn-networks-white/ICONin.png"
+                          alt="Linkedin"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          src="./assets/images/png/socialn-networks-white/Layer_966.png"
+                          alt="Linkedin"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
             <!--col-->
             <div class="col-2">
@@ -143,16 +327,19 @@
         <!--.section-->
       </div>
       <!--header-->
+      <!-- ***************************************** -->
       <div class="breadcrumb-section">
         <img src="./assets/images/png/bc-new.png" alt="breadcrumb-section" />
         <div class="overlay"></div>
-        <div class="breadcrumb-text">
-          <h1>Latest Articles</h1>
-          <ul>
-            <li><a href="./homepage.html" class="active">HOME</a></li>
+        <div class="section">
+          <div class="breadcrumb-text">
+            <h1>Latest Articles</h1>
+            <ul>
+              <li><a href="./homepage.html" class="active">HOME</a></li>
 
-            <li><a href="">NEWS</a></li>
-          </ul>
+              <li><a href="">NEWS</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <!--.breadcrumb-section-->
@@ -172,14 +359,20 @@
                   <div class="title"><h4>Categories</h4></div>
                   <div class="header-box">
                     <div class="tabs-box">
-                      <ul>
-                        <li class="active-tabs">News</li>
-                        <li>Events</li>
-                        <li>Reports</li>
-                        <li>Lifestyle</li>
-                        <li>All</li>
+                      <input class="menu-btn" type="checkbox" id="menu-btn" />
+                      <label class="menu-icon" for="menu-btn">
+                        <span class="navicon"></span>
+                      </label>
+                      <a href="http://" class="all-link-m"> All</a>
+                      <ul class="menu">
+                        <li class="active-tabs"><a href="">News</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Reports</a></li>
+                        <li><a href="">Lifestyle</a></li>
+                        <li class="mobile-none"><a href="">All</a></li>
                       </ul>
                     </div>
+                    <!--.tab-box-->
                   </div>
                 </div>
                 <div class="news-content">
@@ -199,7 +392,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -258,7 +452,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -317,7 +512,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -376,7 +572,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -435,7 +632,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -494,7 +692,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -553,7 +752,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -612,7 +812,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -671,7 +872,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -730,7 +932,8 @@
                             <!--badge-->
                             <div class="news-info-link">
                               <a href="http://" class="news-link"
-                                >Lorem ipsum dolor sit amet cons elit</a
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit</a
                               >
                             </div>
                             <!--link-info-->
@@ -954,7 +1157,7 @@
                 </div>
                 <!--subscribe-header-->
                 <div class="form-part">
-                  <form action="" method="get">
+                  <form action="" method="get" class="clearfix">
                     <input type="text" placeholder="Name" />
                     <input type="email" placeholder="Email" />
                     <button
@@ -1327,6 +1530,16 @@
                 </div>
               </div>
               <div class="col-8">
+                <div class="about-us about-us-mobile">
+                  <h5>About Us</h5>
+                  <p>
+                    Founded in 2014, CasinoNewsDaily aims at cove-ring the
+                    latest news from the casino industry world. We are focused
+                    on providing our readers with accurate news, reviews and
+                    in-depth guides.
+                  </p>
+                  <a href="http://">Read more > </a>
+                </div>
                 <ul class="footer-list">
                   <li><a href="">ABOUT US</a></li>
                   <li><a href="">AUTHORS</a></li>
@@ -1341,7 +1554,7 @@
             <!--.row-->
             <div class="row">
               <div class="col-4">
-                <div class="about-us">
+                <div class="about-us about-us-f">
                   <h5>About Us</h5>
                   <p>
                     Founded in 2014, CasinoNewsDaily aims at cove-ring the
@@ -1381,7 +1594,7 @@
                   <div class="magnifying-glass"></div>
                 </div>
                 <div class="footer-social">
-                  <h5>Usefull Links</h5>
+                  <h5>Social Media</h5>
                   <ul>
                     <li>
                       <a href=""

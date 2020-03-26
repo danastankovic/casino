@@ -10,6 +10,7 @@
     <!--stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/grid.css" />
+    <link rel="stylesheet" href="assets/css/media-queries.css" />
     <!--font0-->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
@@ -101,38 +102,102 @@
         <div class="section">
           <div class="row">
             <div class="col-10">
-              <div class="nav">
-                <input type="checkbox" id="nav-check" />
-                <!-- <div class="nav-header">
-        <div class="nav-title">
-          JoGeek
-        </div>
-      </div> -->
-                <div class="nav-btn">
-                  <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </label>
+              <header id="header-id" class="site-header">
+                <div class="container clearfix">
+                  <div class="nav-header">
+                    <div class="nav-title">
+                      <a href="index.html"> <img src="./assets/images/png/logo.png" alt="logo" /></a>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul class="nav-links">
+                      <li class="active"><a href="">NEWS</a></li>
+                      <li><a href="">EVENTS/REPORTS</a></li>
+                      <li><a href="">LIFESTYLE</a></li>
+                      <li><a href="">CASINOS</a></li>
+                      <li><a href="">DEPOSIT</a></li>
+                      <li><a href="">APPS</a></li>
+                      <li><a href="">BLACKJACK</a></li>
+                      <li><a href="">ROULETTE</a></li>
+                      <li><a href="">SLOTS</a></li>
+                      <li><a href="">VP</a></li>
+                      <li><a href="">GAMES</a></li>
+                      <li><a href="">BONUSES</a></li>
+                    </ul>
+                  </nav>
                 </div>
+            </header><!-- /header -->
+            <div id="toggle-button" class="button-container toggle-animation">
+              <span class="top"></span>
+              <span class="middle"></span>
+              <span class="bottom"></span>
+            </div>  
+            
+            <div class="overlay" id="overlay">
+              <button id="close-overlay" class="btn-close-overlay"></button>
+              <nav class="overlay-menu">
+                <div class="header-search-box">
+                  <input type="text" name="" id="" placeholder="Search..." />
+                  <div class="magnifying-glass"></div>
+                </div>
+                <ul>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>NEWS</a></li>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>EVENTS/REPORTS</a></li>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>LIFESTYLE</a></li>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>CASINOS</a></li>
+                  <li>
 
-                <ul class="nav-links">
-                  <li class="active"><a href="">NEWS</a></li>
-                  <li><a href="">EVENTS/REPORTS</a></li>
-                  <li><a href="">LIFESTYLE</a></li>
-                  <li><a href="">CASINOS</a></li>
-                  <li><a href="">DEPOSIT</a></li>
-                  <li><a href="">APPS</a></li>
-                  <li><a href="">BLACKJACK</a></li>
-                  <li><a href="">ROULETTE</a></li>
-                  <li><a href="">SLOTS</a></li>
-                  <li><a href="">VP</a></li>
-                  <li><a href="">GAMES</a></li>
-                  <li><a href="">BONUSES</a></li>
+                    <div class='dropdown'>
+                      <div class='title pointer-cursor'> <img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>DEPOSIT</div>
+                      
+                      <div class='menu pointer-cursor hide'>
+                        <img src="./assets/images/svg/down-arrow.svg" alt="Open dropdown" class="rotate-180"/>
+                        <div class='option' id='option1'><a href="">Casino</a></div>
+                        <div class='option' id='option2'><a href="">Bingo</a></div>
+                        <div class='option' id='option3'><a href="">SPORT BETTING</a></div>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>APPS</a></li>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>BLACKJACK</a></li>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>ROULETTE</a></li>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>SLOTS</a></li>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>VP</a></li>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>GAMES</a></li>
+                  <li><a href=""><img src="./assets/images/svg/down-arrow-dropdown.svg" alt="Open dropdown" class="open-dropdown"/>BONUSES</a></li>
+                  <li>  <a href=""><img src="./assets/images/svg/uk.svg" class="lng-icon"/>English</a></li>
                 </ul>
-                <!--ul.nav-links-->
-              </div>
-              <!--.nav-->
+                <ul class="social-networks">
+                  <li>
+                    <a href="">
+                      <img src="./assets/images/png/socialn-networks-white/ICON.png" alt="Facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="./assets/images/png/socialn-networks-white/ICONt.png"
+                        alt="twitter"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="./assets/images/png/socialn-networks-white/ICONin.png"
+                        alt="Linkedin"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./assets/images/png/socialn-networks-white/Layer_966.png" alt="Linkedin" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
             </div>
             <!--col-->
             <div class="col-2">
@@ -153,7 +218,65 @@
         <div class="section post-media-section">
           <div class="row">
             <div class="col-6 post-media-content">
-              <div class="post-media">
+              <div class="post-media post-media-mob">
+                <img
+                  alt="post media image"
+                  src="./assets/images/png/Img.png"
+                  class="post-media-image"
+                />
+                <div class="overlay"></div>
+                <div class="post-media-info">
+                  <div class="badge">
+                    NEWS
+                  </div>
+                  <div class="arrow-mob-box">
+                    <img
+                      src="./assets/images/png/arrow-back-mobile.png"
+                      alt="back"
+                    />
+                    <img
+                      src="./assets/images/png/arrow-next-mobile.png"
+                      alt="next"
+                    />
+                  </div>
+                  <!--badge-->
+                  <div class="link-info">
+                    <a href="http://" class="news-link"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit</a
+                    >
+                  </div>
+                  <div class="link-info-text-mob">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut quis ornare est, et fringilla neque. Quisque at
+                      accumsan felis. Maecenas sed feugiat leo, ac laoreet leo
+                      aliquam sodales purus sed auctor pharetra maecenas...
+                    </p>
+                  </div>
+                  <!--link-info-->
+                  <div class="news-info">
+                    <div class="author">
+                      <img alt="" src="./assets/images/png/author.png" />
+                      <span>Author: Terry Davis </span>
+                    </div>
+                    <div class="time">
+                      <img alt="" src="./assets/images/png/clock.png" />
+                      <span>December 12, 2019</span>
+                    </div>
+                  </div>
+                  <div class="dot-box dot-box-mobile">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                  <!--news-info-->
+                </div>
+                <!--.post-media-info-->
+              </div>
+              <div class="post-media post-media-f">
                 <img
                   alt="post media image"
                   src="./assets/images/png/Img.png"
@@ -527,11 +650,17 @@
                   <div class="title"><h4>Popular Casinos by Provider</h4></div>
                   <div class="tabs-box">
                     <ul>
-                      <li class="active-tabs">Netent</li>
-                      <li>Microgaming</li>
-                      <li>RTG</li>
-                      <li>Playtech</li>
-                      <li>All</li>
+                      <li class="active-tabs">
+                        <a href="http://">Netent</a>
+                      </li>
+                      <li>
+                        <a href="">
+                          Microgaming
+                        </a>
+                      </li>
+                      <li><a href="">RTG</a></li>
+                      <li><a href="">Playtech</a></li>
+                      <li><a href="">All</a></li>
                     </ul>
                   </div>
                 </div>
@@ -599,11 +728,11 @@
                   <div class="title"><h4>Popular Games by Provider</h4></div>
                   <div class="tabs-box">
                     <ul>
-                      <li class="active-tabs">Netent</li>
-                      <li>Microgaming</li>
-                      <li>RTG</li>
-                      <li>Playtech</li>
-                      <li>All</li>
+                      <li class="active-tabs"><a href="">Netent</a></li>
+                      <li><a href="">Microgaming</a></li>
+                      <li><a href="">RTG</a></li>
+                      <li><a href="">Playtech</a></li>
+                      <li><a href="">All</a></li>
                     </ul>
                   </div>
                 </div>
@@ -715,13 +844,19 @@ Beanstalk "
                 <div class="events-and-reports-header">
                   <div class="title"><h4>Events and Reports</h4></div>
                   <div class="header-box">
+                    
                     <div class="tabs-box">
-                      <ul>
-                        <li>Events</li>
-                        <li>Reports</li>
-                        <li>Category</li>
-                        <li>Category2</li>
-                        <li class="active-tabs">All</li>
+                      <input class="menu-btn" type="checkbox" id="menu-btn" />
+                      <label class="menu-icon" for="menu-btn">
+                        <span class="navicon"></span>
+                      </label>
+                      <a href="http://" class="all-link-m"> All</a>
+                      <ul class="menu">
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Reports</a></li>
+                        <li><a href="">Category</a></li>
+                        <li><a href="">Category2</a></li>
+                        <li class="active-tabs mobile-none"><a href="">All</a></li>
                       </ul>
                     </div>
                     <div class="arrow-box">
@@ -741,7 +876,7 @@ Beanstalk "
                 <div class="events-and-report-content">
                   <div class="row">
                     <div class="col-6">
-                      <div class="post-media">
+                      <div class="post-media pr">
                         <img
                           alt="post media image"
                           src="./assets/images/png/Layer 1021.png"
@@ -779,7 +914,7 @@ Beanstalk "
                       <!--post-media-->
                     </div>
                     <div class="col-6">
-                      <div class="post-media">
+                      <div class="post-media pl">
                         <img
                           alt="post media image"
                           src="./assets/images/png/lifestyle1.png"
@@ -826,7 +961,7 @@ Beanstalk "
                     </div>
                     <div class="event-item-right-side">
                       <div class="event-media-info">
-                        <div class="badge">
+                        <div class="badge event-media">
                           EVENTS & REPORTS
                         </div>
                         <!--badge-->
@@ -872,7 +1007,7 @@ Beanstalk "
                     </div>
                     <div class="event-item-right-side">
                       <div class="event-media-info">
-                        <div class="badge">
+                        <div class="badge event-media">
                           EVENTS & REPORTS
                         </div>
                         <!--badge-->
@@ -917,14 +1052,20 @@ Beanstalk "
                   <div class="title"><h4>Lifestyle</h4></div>
                   <div class="header-box">
                     <div class="tabs-box">
-                      <ul>
-                        <li>Lifestyle</li>
-                        <li>Reports</li>
-                        <li>Category</li>
-                        <li>Category2</li>
-                        <li class="active-tabs">All</li>
+                      <input class="menu-btn" type="checkbox" id="menu-btn" />
+                      <label class="menu-icon" for="menu-btn">
+                        <span class="navicon"></span>
+                      </label>
+                      <a href="http://" class="all-link-m"> All</a>
+                      <ul class="menu">
+                        <li><a href="">Lifestyle</a></li>
+                        <li><a href="">Reports</a></li>
+                        <li><a href="">Category</a></li>
+                        <li><a href="">Category2</a></li>
+                        <li class="active-tabs mobile-none"><a href="">All</a></li>
                       </ul>
                     </div>
+                    
                     <div class="arrow-box">
                       <img
                         src="./assets/images/svg/back-black.svg"
@@ -938,11 +1079,12 @@ Beanstalk "
                       />
                     </div>
                   </div>
+                  </div>
                 </div>
                 <div class="lifestyle-content">
                   <div class="row">
                     <div class="col-6">
-                      <div class="lifestyle-card">
+                      <div class="lifestyle-card pr">
                         <div class="lifestyle-header">
                           <div class="badge l-badge">
                             LIFESTYLE
@@ -950,6 +1092,7 @@ Beanstalk "
                           <img
                             src="./assets/images/png/lifestyle1.png"
                             alt="Lifestyle"
+                            class="lifestyle-image"
                           />
                         </div>
                         <div class="lifestyle-card-content">
@@ -981,7 +1124,7 @@ Beanstalk "
                       </div>
                     </div>
                     <div class="col-6">
-                      <div class="lifestyle-card">
+                      <div class="lifestyle-card padding-mobile pl">
                         <div class="lifestyle-header">
                           <div class="badge l-badge">
                             LIFESTYLE
@@ -989,6 +1132,7 @@ Beanstalk "
                           <img
                             src="./assets/images/png/lifestyle2.png"
                             alt="Lifestyle"
+                            class="lifestyle-image"
                           />
                         </div>
                         <div class="lifestyle-card-content">
@@ -1024,7 +1168,7 @@ Beanstalk "
                   <!--row-->
                   <div class="row">
                     <div class="col-6">
-                      <div class="lifestyle-card">
+                      <div class="lifestyle-card pr">
                         <div class="lifestyle-header">
                           <div class="badge l-badge">
                             LIFESTYLE
@@ -1032,6 +1176,7 @@ Beanstalk "
                           <img
                             src="./assets/images/png/lifestyle3.png"
                             alt="Lifestyle"
+                            class="lifestyle-image"
                           />
                         </div>
                         <div class="lifestyle-card-content">
@@ -1063,7 +1208,7 @@ Beanstalk "
                       </div>
                     </div>
                     <div class="col-6">
-                      <div class="lifestyle-card">
+                      <div class="lifestyle-card padding-mobile pl">
                         <div class="lifestyle-header">
                           <div class="badge l-badge">
                             LIFESTYLE
@@ -1071,6 +1216,7 @@ Beanstalk "
                           <img
                             src="./assets/images/png/lifestyle4.png"
                             alt="Lifestyle"
+                            class="lifestyle-image"
                           />
                         </div>
                         <div class="lifestyle-card-content">
@@ -1106,7 +1252,7 @@ Beanstalk "
                   <!--row-->
                 </div>
               </div>
-            </div>
+            
             <!--.left-side-->
             <!-- ****************************** -->
             <div class="right-side">
@@ -1610,6 +1756,7 @@ Beanstalk "
             </div>
             <!--.right-side-->
           </div>
+          </div>
           <!--row-->
         </div>
         <!--section-->
@@ -1635,6 +1782,16 @@ Beanstalk "
                 </div>
               </div>
               <div class="col-8">
+                <div class="about-us about-us-mobile">
+                  <h5>About Us</h5>
+                  <p>
+                    Founded in 2014, CasinoNewsDaily aims at cove-ring the
+                    latest news from the casino industry world. We are focused
+                    on providing our readers with accurate news, reviews and
+                    in-depth guides.
+                  </p>
+                  <a href="http://">Read more > </a>
+                </div>
                 <ul class="footer-list">
                   <li><a href="">ABOUT US</a></li>
                   <li><a href="">AUTHORS</a></li>
@@ -1649,7 +1806,7 @@ Beanstalk "
             <!--.row-->
             <div class="row">
               <div class="col-4">
-                <div class="about-us">
+                <div class="about-us about-us-f">
                   <h5>About Us</h5>
                   <p>
                     Founded in 2014, CasinoNewsDaily aims at cove-ring the
@@ -1757,7 +1914,9 @@ Beanstalk "
       <!--.main-content-->
     </div>
     <!--.main-->
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Raleway:400,300,600' >
 
+ 
     <!-- SCRIPT -->
     <script src="./assets/js/main.js
  "></script>

@@ -1,0 +1,468 @@
+/* (320x480) iPhone (Original, 3G, 3GS) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* insert styles here */
+}
+
+/* (320x480) Smartphone, Portrait */
+@media only screen and (device-width: 320px) and (orientation: portrait) {
+  /* insert styles here */
+}
+
+/* (320x480) Smartphone, Landscape */
+@media only screen and (device-width: 480px) and (orientation: landscape) {
+  /* insert styles here */
+}
+
+/* (480x800) Android */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+  /* insert styles here */
+}
+
+/* (720x1280) Galaxy Nexus, WXGA */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+  /* insert styles here */
+}
+
+/* (720x1280) Galaxy Nexus, Landscape */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) and (orientation: landscape) {
+  /* insert styles here */
+}
+
+/* (1024x768) iPad 1 & 2, XGA */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* insert styles here */
+}
+
+/* (768x1024) iPad 1 & 2, Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* insert styles here */
+}
+
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* insert styles here */
+}
+
+/* (2048x1536) iPad 3 */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
+  /* insert styles here */
+}
+
+/* (1280x720) Galaxy Note 2, WXGA */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+  /* insert styles here */
+}
+
+/* (1366x768) WXGA Display */
+@media screen and (max-width: 1366px) {
+  /* insert styles here */
+}
+
+/* (1280x1024) SXGA Display */
+@media screen and (max-width: 1280px) {
+  /* insert styles here */
+}
+
+/* (1440x900) WXGA+ Display */
+@media screen and (max-width: 1440px) {
+  /* insert styles here */
+}
+
+/* (1680x1050) WSXGA+ Display */
+@media screen and (max-width: 1680px) {
+  /* insert styles here */
+}
+
+/* (1920x1080) Full HD Display */
+@media screen and (max-width: 1920px) {
+  /* insert styles here */
+}
+/* FOR HEADER */
+@media (max-width: 768px) {
+  .header .nav .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+  }
+  .header .nav .nav-btn label {
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .header .nav .nav-btn label span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f08946;
+  }
+  .header .nav .nav-links {
+    position: absolute;
+    display: block;
+    width: 400px;
+    background-color: #333;
+    height: 0px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 1px;
+    right: -17px;
+    z-index: 999;
+  }
+  .header .nav .nav-links a {
+    display: block;
+    width: 100%;
+  }
+  .header .nav #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .header .nav #nav-check:checked ~ .nav-links {
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+.tabs-box .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+.tabs-box ul {
+  list-style: none;
+  overflow: hidden;
+}
+.tabs-box .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 0;
+  position: relative;
+  user-select: none;
+  margin-right: 30px;
+}
+
+.tabs-box .menu-icon .navicon {
+  background: #aaaaaa;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.tabs-box .menu-icon .navicon:before,
+.tabs-box .menu-icon .navicon:after {
+  background: #aaaaaa;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.tabs-box .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.tabs-box .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.tabs-box .menu-btn {
+  display: none;
+}
+
+.tabs-box .menu-btn:checked ~ .menu {
+  max-height: 0px;
+}
+
+.tabs-box .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.tabs-box .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.tabs-box .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.tabs-box .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.tabs-box .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+.all-link-m {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  color: #5c629e;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.about-us-mobile,
+.post-media.post-media-mob {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tabs-box .menu {
+    max-height: none;
+  }
+  .tabs-box .menu-icon {
+    display: none;
+  }
+  .all-link-m {
+    display: none;
+  }
+}
+@media only screen and (min-width: 556px) and (max-width: 960px) {
+  .section {
+    width: 560px;
+    margin: auto;
+    padding: 0 10px;
+  }
+  .top-banner,
+  .header-top,
+  .post-media.post-media-f,
+  .guides-container-header .arrow-box {
+    display: none;
+  }
+  .nav-header {
+    display: inline-block;
+  }
+  .header {
+    background: #fff;
+  }
+  #search {
+    display: none;
+  }
+  .header .nav {
+    padding: 17.5px 0;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .left-side-image {
+    display: none;
+  }
+  .section.section-content {
+    margin-top: 22px;
+  }
+  .news-item {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .news-right-side {
+    margin-left: 0;
+  }
+  .news-media-info {
+    margin-top: 13px;
+  }
+  .right-side {
+    width: 100%;
+    padding-left: 0;
+  }
+  .pagination {
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 60px;
+  }
+  .part-text {
+    position: relative;
+  }
+  .part-text h4 {
+    position: absolute;
+    top: 0;
+    left: -46px;
+  }
+  .img-wrap {
+    max-height: 343px;
+  }
+  .img-wrap img {
+    height: 374px;
+  }
+  .subscribe p {
+    padding-right: 20px;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .subscribe form input {
+    width: 49%;
+  }
+  .subscribe form input:first-child {
+    float: left;
+    margin-right: 5px;
+  }
+  .subscribe form input:last-child {
+    margin-left: 5px;
+  }
+  button.sign-up {
+    margin-top: 15px;
+  }
+  .form-part {
+    text-align: center;
+  }
+  .footer ul.image-list li {
+    padding-right: 28px;
+  }
+  .footer .left-part {
+    display: none;
+  }
+  .about-us-f {
+    display: none;
+  }
+  .about-us-mobile {
+    display: block;
+  }
+  .footer ul.footer-list {
+    list-style-type: none;
+    text-align: center;
+    height: auto;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .usefull-links-col,
+  .footer-searh-box {
+    display: none;
+  }
+  .footer-social {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 39px;
+    margin-top: 39px;
+  }
+  .footer-bottom-list {
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .bootom-part {
+    margin-top: 100px;
+    position: relative;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .footer ul.image-list li:nth-child(2) {
+    padding-right: 0;
+  }
+  .top-part-post-media,
+  .bottom-part-post-media {
+    display: none;
+  }
+  .post-media.post-media-mob {
+    display: block;
+  }
+  .post-media.post-media-mob a.news-link {
+    padding-right: 0;
+  }
+  .link-info-text-mob p {
+    color: #f7f7f7;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.33px;
+    margin-bottom: 5px;
+  }
+  .arrow-mob-box {
+    position: absolute;
+    top: -52px;
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dot-box-mobile.dot-box {
+    margin-top: 10px;
+  }
+  .dot-box-mobile .dot {
+    border: 2px solid #fff;
+  }
+  .dot-box-mobile.dot-box .dot.active {
+    background-color: #fff;
+  }
+  .post-media-info {
+    padding: 0 17px 5px;
+  }
+  .guides-item:nth-child(2n + 0) {
+    display: none;
+  }
+  .popular-casinos-container,
+  .popular-games-container,
+  .events-and-reports-container,
+  .lifestyle-container {
+    margin-top: 40px;
+  }
+  .guides-container-header,
+  .popular-casinos-header,
+  .popular-games-header {
+    display: block;
+  }
+  .tabs-box {
+    margin-top: 13px;
+  }
+  .popular-casino-item:nth-child(4n + 0) {
+    display: none;
+  }
+  .popular-games-item:nth-child(4n + 0) {
+    display: none;
+  }
+  .popular-casino-item,
+  .popular-games-item {
+    margin-right: 19px;
+  }
+  .events-and-reports-container .arrow-box,
+  .lifestyle-container .arrow-box,
+  .mobile-none a {
+    display: none;
+  }
+  .events-and-reports-header .tabs-box,
+  .lifestyle-container .tabs-box {
+    width: 281px;
+    margin-top: 0;
+  }
+  .events-and-reports-header {
+    max-height: 30px;
+  }
+  .events-and-report-content .col-6:last-child {
+    display: none;
+  }
+  .event-text p {
+    display: none;
+  }
+  .event-item-left-side img {
+    max-width: 154px;
+  }
+  .lifestyle-content .col-6 {
+    width: 50%;
+  }
+  .lifestyle-card .lifestyle-header img {
+    width: 100%;
+  }
+  .lifestyle-card {
+    margin-bottom: 18px;
+    padding-right: 5px;
+  }
+  .padding-mobile {
+    padding-left: 5px;
+    padding-right: 0;
+  }
+  .lifestyle-content {
+    margin-bottom: 20px;
+    margin-top: 4px;
+  }
+  .events-and-report-content .post-media {
+    width: 100%;
+  }
+  .breadcrumb-section {
+    margin-top: 20px;
+  }
+}
